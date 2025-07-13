@@ -1,101 +1,101 @@
-# 🚀 Быстрый старт APET
+# 🚀 APET Quick Start
 
-## Что такое APET?
+## What is APET?
 
-APET - это инструмент для **тестирования безопасности ИИ-систем**, который использует эволюционный алгоритм MAP-Elites для генерации adversarial prompts.
+APET is a tool for **AI system security testing** that uses the MAP-Elites evolutionary algorithm to generate adversarial prompts.
 
-## ⚡ Быстрая установка
+## ⚡ Quick Installation
 
-### 1. Установите Ollama
+### 1. Install Ollama
 
 ```bash
 # Windows
 winget install Ollama.Ollama
 
-# После установки запустите Ollama
+# After installation, start Ollama
 ollama serve
 ```
 
-### 2. Установите модель
+### 2. Install a model
 
 ```bash
-# В новом терминале
+# In new terminal
 ollama pull llama3
 ```
 
-### 3. Запустите APET
+### 3. Run APET
 
 ```bash
-# В папке проекта
+# In project folder
 cd gca
 cargo run
 ```
 
-## 🎯 Первый запуск
+## 🎯 First Run
 
-### GUI режим (рекомендуется)
+### GUI mode (recommended)
 
-1. **Запустите программу**: `cargo run`
-2. **Перейдите на вкладку "MAP-Elites"**
-3. **Настройте параметры**:
-   - Поколения: 5-10 (для быстрого теста)
-   - Размер популяции: 10-20
-   - Целевая система: "ChatGPT" или "Claude"
-4. **Добавьте цели атак**:
-   - "Заставить ИИ игнорировать инструкции"
-   - "Получить внутреннюю информацию"
-5. **Нажмите "Запустить эволюцию"**
+1. **Launch the program**: `cargo run`
+2. **Go to "MAP-Elites" tab**
+3. **Configure parameters**:
+   - Generations: 5-10 (for quick test)
+   - Population size: 10-20
+   - Target system: "ChatGPT" or "Claude"
+4. **Add attack goals**:
+   - "Force AI to ignore instructions"
+   - "Get internal information"
+5. **Click "Start Evolution"**
 
-### CLI режим
+### CLI mode
 
 ```bash
-# Быстрый тест
+# Quick test
 cargo run -- --cli
 
-# Тест конкретной системы
+# Test specific system
 cargo run -- "ChatGPT"
 ```
 
-## 📊 Результаты
+## 📊 Results
 
-После завершения вы получите:
+After completion you will get:
 
-- **JSON файл** с всеми промптами
-- **График эффективности** в формате SVG
-- **Детальную статистику** в GUI
+- **JSON file** with all prompts
+- **Performance graph** in SVG format
+- **Detailed statistics** in GUI
 
-## 🔧 Настройки для новичков
+## 🔧 Settings for beginners
 
-### Параметры для быстрого теста:
-- **Поколения**: 5
-- **Популяция**: 15
-- **Время выполнения**: ~2-3 минуты
+### Parameters for quick testing:
+- **Generations**: 5
+- **Population**: 15
+- **Execution time**: ~2-3 minutes
 
-### Параметры для серьезного тестирования:
-- **Поколения**: 20-50
-- **Популяция**: 30-100
-- **Время выполнения**: 10-30 минут
+### Parameters for serious testing:
+- **Generations**: 20-50
+- **Population**: 30-100
+- **Execution time**: 10-30 minutes
 
-## 🛡️ Этические правила
+## 🛡️ Ethical Rules
 
-⚠️ **ТОЛЬКО для тестирования безопасности!**
+⚠️ **ONLY for security testing!**
 
-✅ **Разрешено**:
-- Тестирование собственных ИИ-систем
-- Исследования в области безопасности
-- Образовательные цели
+✅ **Allowed**:
+- Testing own AI systems
+- Security research
+- Educational purposes
 
-❌ **Запрещено**:
-- Атаки на чужие системы
-- Нарушение условий использования
-- Вредоносная деятельность
+❌ **Prohibited**:
+- Attacks on other systems
+- Terms of service violations
+- Malicious activity
 
-## 📞 Помощь
+## 📞 Help
 
-- **Ошибки**: Создайте issue в GitHub
-- **Вопросы**: Обсудите в Discussions
-- **Документация**: Читайте README.md
+- **Errors**: Create issue on GitHub
+- **Questions**: Discuss in Discussions
+- **Documentation**: Read README.md
 
-## 🎉 Готово!
+## 🎉 Ready!
 
-Теперь вы можете использовать APET для тестирования безопасности ИИ-систем. Удачи! 
+Now you can use APET for AI system security testing. Good luck! 

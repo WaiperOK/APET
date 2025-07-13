@@ -153,7 +153,7 @@ impl LocalizedText {
     }
 }
 
-// Локализация текстов
+// Text localization
 pub struct Localization;
 
 impl Localization {
